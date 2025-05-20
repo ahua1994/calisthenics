@@ -1,15 +1,15 @@
 import { useState } from "react";
 import Exercise from "./components/Exercise";
+import exercises from "./assets/exercises";
 import "./App.css";
 
 function App() {
-  const exercises = [];
   return (
     <>
       <h1>Calisthenics Progressions</h1>
       <div className="exercises">
         {exercises.map((x) => (
-          <Exercise />
+          <Exercise name={x} />
         ))}
       </div>
     </>
