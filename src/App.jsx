@@ -9,7 +9,7 @@ function App() {
       <h1>Calisthenics Progressions</h1>
       <div className="exercises">
         {exercises.map((x) => (
-          <Exercise name={x} />
+          <Exercise x={x} />
         ))}
       </div>
     </>
